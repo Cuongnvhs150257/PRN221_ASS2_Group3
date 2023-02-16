@@ -42,7 +42,8 @@ namespace MusicStore
             }
             else
             {
-                MessageBox.Show("Success hai mặt heo, hailt !!! ");
+
+                MessageBox.Show("Trường mặc cứt");
 
                 this.Close();
             }
