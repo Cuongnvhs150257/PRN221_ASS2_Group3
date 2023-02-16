@@ -1,0 +1,42 @@
+﻿<Window x:Class="MusicStore.AlbumWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicStore"
+        mc:Ignorable="d"
+        Title="AlbumWindow" Height="523" Width="800" Background="LightBlue">
+    <Grid>
+        <DockPanel Height="210" Margin="0,0,0,200">
+            <StackPanel Margin="10,0,0,0" Width="350" Height="200">
+                <Label Content="Genre:" FontSize="16"/>
+                <ComboBox x:Name="cboGenre" Width="344" FontSize="16"/>
+                <Label Content="Artist:" FontSize="16"/>
+                <ComboBox x:Name="cboArtist" Width="344" FontSize="16"/>
+                <Label Content="Title:" FontSize="16"/>
+                <TextBox x:Name="txtTitle" TextWrapping="Wrap" Text="" Width="350" FontSize="16" />
+
+            </StackPanel>
+            <StackPanel Margin="10,0,0,0" Width="350" Height="200">
+                <Label Content="Price" FontSize="16" />
+                <TextBox x:Name="txtPrice" TextWrapping="Wrap" Text="" Width="350" FontSize="16" />
+                <Button x:Name="btnUrl" Content="AlbumUrl" Width="125" FontSize="16" Margin="0,10,210,0"/>
+                <TextBox x:Name="txtUrl" TextWrapping="Wrap" Text="" Width="350" FontSize="16" Margin="0,10,0,0"/>
+            </StackPanel>
+        </DockPanel>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="170,275,0,0" VerticalAlignment="Top" Height="28" Width="104" FontSize="16"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="340,275,0,0" VerticalAlignment="Top" Height="28" Width="104" FontSize="16"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="510,275,0,0" VerticalAlignment="Top" Height="28" Width="104" FontSize="16"/>
+        <ListView Margin="34,322,10,10" Name="lvAlbum" Width="Auto" Height="Auto">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Genre" Width="80"/>
+                    <GridViewColumn Header="Artist" Width="80"/>
+                    <GridViewColumn Header="Title" Width="270"/>
+                    <GridViewColumn Header="Price" Width="100"/>
+                    <GridViewColumn Header="AlbumUrl" Width="200"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>

@@ -1,0 +1,49 @@
+﻿<Window x:Class="MusicStore.CheckoutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicStore"
+        mc:Ignorable="d"
+        Title="CheckoutWindow" Height="564" Width="974" Background="LightBlue">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="94*"/>
+            <ColumnDefinition Width="514*"/>
+            <ColumnDefinition Width="363*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lblInvoice" Content="Invoice" HorizontalAlignment="Left" Margin="215,25,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="28" RenderTransformOrigin="0.473,-6.229" Grid.Column="2"/>
+        <DockPanel Grid.ColumnSpan="4" Height="400">
+            <StackPanel Background="LightBlue" Orientation="Vertical" Width="400" Margin="10,0,0,0" Height="350">
+                <Label Content="FirstName:" FontSize="16"/>
+                <TextBox x:Name="txtFirstName" TextWrapping="Wrap" Text="" Width="400" FontSize="16"></TextBox>
+                <Label Content="LastName:" FontSize="16"/>
+                <TextBox x:Name="txtLastName" TextWrapping="Wrap" Text="" Width="400" FontSize="16"></TextBox>
+                <Label Content="Address:" FontSize="16"/>
+                <TextBox x:Name="txtAddress" TextWrapping="Wrap" Text="" Width="400" FontSize="16"></TextBox>
+                <Label Content="City:" FontSize="16"/>
+                <TextBox x:Name="txtCity" TextWrapping="Wrap" Text="" Width="400" FontSize="16"></TextBox>
+                <Label Content="State:" FontSize="16"/>
+                <TextBox x:Name="txtState" TextWrapping="Wrap" Text="" Width="400" FontSize="16"></TextBox>
+                <Label Content="Country:" FontSize="16"/>
+                <TextBox x:Name="txtCountry" TextWrapping="Wrap" Text="" Width="400" FontSize="16"></TextBox>
+            </StackPanel>
+            <StackPanel Margin="20,0,0,0" Width="400" Height="350">
+                <Label Content="Phone:" FontSize="16"/>
+                <TextBox x:Name="txtPhone" TextWrapping="Wrap" Text="" Width="495" FontSize="16"/>
+                <Label Content="Email:" FontSize="16"/>
+                <TextBox x:Name="txtEmail" TextWrapping="Wrap" Text="" Width="495" FontSize="16"/>
+                <Label Content="Total:" Width="99" FontSize="18" FontWeight="Bold"/>
+                <TextBox x:Name="txtTotal" TextWrapping="Wrap" Text="" Width="125" FontSize="18"/>
+                <Label Content="Cash:" Width="99" FontSize="18" FontWeight="Bold"/>
+                <TextBox x:Name="txtCash" TextWrapping="Wrap" Text="" Width="125" FontSize="18"/>
+                <Label Content="Remain:" Width="99" FontSize="18" FontWeight="Bold"/>
+                <TextBox x:Name="txtRemain" TextWrapping="Wrap" Text="" Width="125" FontSize="18"/>
+            </StackPanel>
+        </DockPanel>
+        <Button x:Name="btnSave" Grid.Column="2" Content="Save" HorizontalAlignment="Left" Margin="215,493,0,0" VerticalAlignment="Top" Height="28" Width="92"/>
+        <Button x:Name="btnCancel" Grid.Column="2" Content="Cancel" HorizontalAlignment="Left" Margin="362,493,0,0" VerticalAlignment="Top" Height="28" Width="92" Click="btnCancel_Click"/>
+
+    </Grid>
+</Window>

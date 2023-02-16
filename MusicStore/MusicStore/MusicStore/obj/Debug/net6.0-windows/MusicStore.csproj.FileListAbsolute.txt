@@ -1,0 +1,120 @@
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.csproj.AssemblyReference.cache
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore_MarkupCompile.cache
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore_MarkupCompile.lref
+C:\Users\tienh\source\repos\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.exe
+C:\Users\tienh\source\repos\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.deps.json
+C:\Users\tienh\source\repos\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.runtimeconfig.json
+C:\Users\tienh\source\repos\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.dll
+C:\Users\tienh\source\repos\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.pdb
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.g.resources
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.AssemblyInfoInputs.cache
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.AssemblyInfo.cs
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.csproj.CoreCompileInputs.cache
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.dll
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\refint\MusicStore.dll
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.pdb
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.genruntimeconfig.cache
+C:\Users\tienh\source\repos\MusicStore\MusicStore\obj\Debug\net6.0-windows\ref\MusicStore.dll
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.exe
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.deps.json
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.runtimeconfig.json
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.dll
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.pdb
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.csproj.AssemblyReference.cache
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\App.g.cs
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore_MarkupCompile.cache
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore_MarkupCompile.lref
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MainWindow.baml
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.g.resources
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.GeneratedMSBuildEditorConfig.editorconfig
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.AssemblyInfoInputs.cache
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.AssemblyInfo.cs
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.csproj.CoreCompileInputs.cache
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.dll
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\refint\MusicStore.dll
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.pdb
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.genruntimeconfig.cache
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\ref\MusicStore.dll
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\ShoppingWindow.g.cs
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\ShoppingWindow.baml
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\AlbumWindow.g.cs
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\CartWindow.g.cs
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\LoginWindow.g.cs
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\AlbumWindow.baml
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\CartWindow.baml
+D:\FU_Learning\Spring_2023\PRN221\Ass2-Github\MusicStore\MusicStore\obj\Debug\net6.0-windows\LoginWindow.baml
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.exe
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\appsettings.json
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.deps.json
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.runtimeconfig.json
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\MusicStore.pdb
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Humanizer.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.csproj.AssemblyReference.cache
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\AlbumWindow.g.cs
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\CartWindow.g.cs
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\CheckoutWindow.g.cs
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\LoginWindow.g.cs
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MainWindow.g.cs
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\ShoppingWindow.g.cs
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\App.g.cs
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore_MarkupCompile.cache
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore_MarkupCompile.lref
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\AlbumWindow.baml
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\CartWindow.baml
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\CheckoutWindow.baml
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\LoginWindow.baml
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MainWindow.baml
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\ShoppingWindow.baml
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.g.resources
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.GeneratedMSBuildEditorConfig.editorconfig
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.AssemblyInfoInputs.cache
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.AssemblyInfo.cs
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.csproj.CoreCompileInputs.cache
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.csproj.CopyComplete
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\refint\MusicStore.dll
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.pdb
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\MusicStore.genruntimeconfig.cache
+D:\program files\Github\PRN221_ASS1_Group3\MusicStore\MusicStore\obj\Debug\net6.0-windows\ref\MusicStore.dll

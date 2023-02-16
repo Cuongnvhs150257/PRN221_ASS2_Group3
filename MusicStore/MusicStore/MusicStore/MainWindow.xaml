@@ -1,0 +1,40 @@
+﻿<Window x:Class="MusicStore.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusicStore"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Menu >
+        <Menu.Background>
+            <ImageBrush ImageSource="/backgorund2.png"/>
+        </Menu.Background>
+        <MenuItem Header="_    Music Store
+" Height="81" Width="189" RenderTransformOrigin="0,700" FontSize="24" FontWeight="Bold" Background="#FF2EF42B" Foreground="Black">
+            
+            <MenuItem.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.304"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </MenuItem.RenderTransform>
+            
+            <MenuItem Header="_Shopping" Click="ShoppingOnClick" Foreground="Red"/>
+            <MenuItem Header="_Album"  Click="AlbumOnClick" Foreground="Red"/>
+
+            <MenuItem Header="_Cart" Click="CartOnClick" Foreground="Red"/>
+            <Separator />
+            <MenuItem Header="_Login"  Click="LoginOnClick" />
+        </MenuItem>
+    </Menu>
+
+
+
+
+
+
+</Window>
