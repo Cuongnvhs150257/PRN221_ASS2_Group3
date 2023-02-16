@@ -42,7 +42,7 @@ namespace MusicStore
             }
             else
             {
-                MessageBox.Show("Success");
+                MessageBox.Show("Success hai mặt heo!!! ");
 
                 this.Close();
             }
