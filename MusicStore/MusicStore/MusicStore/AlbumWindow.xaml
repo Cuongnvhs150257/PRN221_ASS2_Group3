@@ -10,31 +10,56 @@
         <DockPanel Height="210" Margin="0,0,0,200">
             <StackPanel Margin="10,0,0,0" Width="350" Height="200">
                 <Label Content="Genre:" FontSize="16"/>
-                <ComboBox x:Name="cboGenre" Width="344" FontSize="16"/>
+                <ComboBox x:Name="cbGenre" SelectedValue="{Binding Path=Genre.Name, Mode=OneWay}"
+                         DataContext="{Binding ElementName=lvAlbum, Path=SelectedItem}"
+                          SelectionChanged="cbGenre_SelectionChanged"
+                          Width="344" FontSize="16"/>
                 <Label Content="Artist:" FontSize="16"/>
-                <ComboBox x:Name="cboArtist" Width="344" FontSize="16"/>
+                <ComboBox x:Name="cbArtist" Width="344" FontSize="16"
+                          SelectedValue="{Binding Path=Artist.Name, Mode=OneWay}"
+                          DataContext="{Binding ElementName=lvAlbum, Path=SelectedItem}"
+                          />
                 <Label Content="Title:" FontSize="16"/>
-                <TextBox x:Name="txtTitle" TextWrapping="Wrap" Text="" Width="350" FontSize="16" />
+                <TextBox x:Name="txtTitle" TextWrapping="Wrap" Width="350" FontSize="16"
+                        Text="{Binding Path=Title, Mode=OneWay}"
+                         DataContext="{Binding ElementName=lvAlbum, Path=SelectedItem}"
+                         />
 
             </StackPanel>
             <StackPanel Margin="10,0,0,0" Width="350" Height="200">
                 <Label Content="Price" FontSize="16" />
-                <TextBox x:Name="txtPrice" TextWrapping="Wrap" Text="" Width="350" FontSize="16" />
+                <TextBox x:Name="txtPrice" TextWrapping="Wrap" Width="350" FontSize="16" 
+                          Text="{Binding Path=Price, Mode=OneWay}"
+                         DataContext="{Binding ElementName=lvAlbum, Path=SelectedItem}"
+                         />
                 <Button x:Name="btnUrl" Content="AlbumUrl" Width="125" FontSize="16" Margin="0,10,210,0"/>
-                <TextBox x:Name="txtUrl" TextWrapping="Wrap" Text="" Width="350" FontSize="16" Margin="0,10,0,0"/>
+                <TextBox x:Name="txtUrl" TextWrapping="Wrap" Width="350" FontSize="16" Margin="0,10,0,0"
+                          Text="{Binding Path=AlbumUrl, Mode=OneWay}"
+                         DataContext="{Binding ElementName=lvAlbum, Path=SelectedItem}"
+                         />
             </StackPanel>
         </DockPanel>
-        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="170,275,0,0" VerticalAlignment="Top" Height="28" Width="104" FontSize="16"/>
-        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="340,275,0,0" VerticalAlignment="Top" Height="28" Width="104" FontSize="16"/>
-        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="510,275,0,0" VerticalAlignment="Top" Height="28" Width="104" FontSize="16"/>
+        <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="170,275,0,0" VerticalAlignment="Top" Height="28" Width="104" FontSize="16" Click="btnAdd_Click"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="340,275,0,0" VerticalAlignment="Top" Height="28" Width="104" FontSize="16" Click="btnUpdate_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="510,275,0,0" VerticalAlignment="Top" Height="28" Width="104" FontSize="16" Click="btnDelete_Click"/>
         <ListView Margin="34,322,10,10" Name="lvAlbum" Width="Auto" Height="Auto">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Genre" Width="80"/>
-                    <GridViewColumn Header="Artist" Width="80"/>
-                    <GridViewColumn Header="Title" Width="270"/>
-                    <GridViewColumn Header="Price" Width="100"/>
-                    <GridViewColumn Header="AlbumUrl" Width="200"/>
+                    <GridViewColumn Header="Genre" Width="80"
+                                    DisplayMemberBinding="{Binding Path=GenreId}"
+                                    />
+                    <GridViewColumn Header="Artist" Width="80"
+                                    DisplayMemberBinding="{Binding Path=ArtistId}"
+                                    />
+                    <GridViewColumn Header="Title" Width="270"
+                                    DisplayMemberBinding="{Binding Path=Title}"
+                                    />
+                    <GridViewColumn Header="Price" Width="100"
+                                    DisplayMemberBinding="{Binding Path=Price}"
+                                    />
+                    <GridViewColumn Header="AlbumUrl" Width="200"
+                                    DisplayMemberBinding="{Binding Path=AlbumUrl}"
+                                    />
                 </GridView>
             </ListView.View>
         </ListView>
