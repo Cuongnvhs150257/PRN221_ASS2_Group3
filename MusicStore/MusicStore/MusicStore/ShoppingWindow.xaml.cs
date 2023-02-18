@@ -29,6 +29,7 @@ namespace MusicStore
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
+            cbGenre.ItemsSource = context.Genres.ToList().Select(genre => genre.Name).ToList();
 
         }
     }
