@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:MusicStore"
         mc:Ignorable="d"
         Title="ShoppingWindow" Height="678" Width="876" Background="LightBlue" FontWeight="Bold">
-    <Grid Height="678" VerticalAlignment="Top">
+    <!--<Grid Height="678" VerticalAlignment="Top">
         <Label Content="Genre:" HorizontalAlignment="Left" Margin="70,34,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Normal"/>
         <ComboBox HorizontalAlignment="Left" Margin="131,36,0,0" VerticalAlignment="Top" Width="303" FontSize="16"/>
         <Button x:Name="btnSearch" Click="btnSearch_Click" Content="Search" HorizontalAlignment="Left" Margin="482,36,0,0" VerticalAlignment="Top" Height="29" Width="123" FontSize="16" FontWeight="Normal"/>
@@ -21,5 +21,32 @@
         <Button x:Name="btnPrevious" Content="Previous" HorizontalAlignment="Left" Margin="297,595,0,0" VerticalAlignment="Top" Height="29" Width="99" FontSize="16" FontWeight="Normal"/>
         <Button x:Name="btnNext" Content="Next" HorizontalAlignment="Left" Margin="470,595,0,0" VerticalAlignment="Top" Height="29" Width="97" FontSize="16" FontWeight="Normal"/>
 
+    </Grid>-->
+
+    <Grid Height="678" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <ComboBox Name="cbGenre" HorizontalAlignment="Left" Height="40" Width="330"
+                      />
+            <Button Grid.Row="4" Grid.Column="1" Content="Search"
+                Height="35" Width="100" HorizontalAlignment="Right"/>
+        </Grid>
+        
+        
+
+
+        <Button Grid.Row="4" Grid.Column="0" Content="Previous"
+                Height="35" Width="100" HorizontalAlignment="Right" Margin="30"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="Next"
+                Height="35" Width="100" HorizontalAlignment="Left" Margin="30"/>
     </Grid>
 </Window>
