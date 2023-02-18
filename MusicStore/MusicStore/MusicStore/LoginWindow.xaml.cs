@@ -20,6 +20,8 @@ namespace MusicStore
     /// </summary>
     public partial class LoginWindow : Window
     {   
+        Settings settings = new Settings();
+
         Boolean checkAdmin;
         public LoginWindow()
         {
@@ -38,7 +40,7 @@ namespace MusicStore
             && u.Password == txtPass.Text).FirstOrDefault();
             if(user == null)
             {
-                MessageBox.Show("Tài khoản không tồn tại");
+                MessageBox.Show("This account doesn't exist");
 
             }
             else if(user.UserName == "admin")
@@ -50,8 +52,11 @@ namespace MusicStore
                 this.Close();
             }
             else
-            {   
-
+            {
+                settings.UserName = user.UserName;
+                settings.Role = user.Role;
+                ShoppingCart cart = ShoppingCart.GetCart();
+                cart.MigrateCart();
                 MessageBox.Show("Login Success");
                 this.Close();
                 

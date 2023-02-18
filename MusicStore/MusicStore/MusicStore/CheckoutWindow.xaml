@@ -42,7 +42,7 @@
                 <TextBox x:Name="txtRemain" TextWrapping="Wrap" Text="" Width="125" FontSize="18"/>
             </StackPanel>
         </DockPanel>
-        <Button x:Name="btnSave" Grid.Column="2" Content="Save" HorizontalAlignment="Left" Margin="215,493,0,0" VerticalAlignment="Top" Height="28" Width="92"/>
+        <Button x:Name="btnSave" Grid.Column="2" Click="btnSave_Click" Content="Save" HorizontalAlignment="Left" Margin="215,493,0,0" VerticalAlignment="Top" Height="28" Width="92"/>
         <Button x:Name="btnCancel" Grid.Column="2" Content="Cancel" HorizontalAlignment="Left" Margin="362,493,0,0" VerticalAlignment="Top" Height="28" Width="92" Click="btnCancel_Click"/>
 
     </Grid>

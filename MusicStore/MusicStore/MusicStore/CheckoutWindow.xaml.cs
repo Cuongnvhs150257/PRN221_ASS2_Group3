@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MusicStore.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,13 +20,50 @@ namespace MusicStore
     /// </summary>
     public partial class CheckoutWindow : Window
     {
+        MusicStoreContext context;
+        Settings settings = new Settings();
+
         public CheckoutWindow()
         {
             InitializeComponent();
+
+            context = new MusicStoreContext();
+            User user = context.Users.Where(u => u.UserName == settings.UserName).FirstOrDefault();
+            txtFirstName.Text = user.FirstName;
+            txtLastName.Text = user.LastName;
+            txtAddress.Text = user.Address;
+            txtCity.Text = user.City;
+            txtState.Text = user.State;
+            txtCountry.Text = user.Country;
+            txtPhone.Text = user.Phone;
+            txtEmail.Text = user.Email;
+            txtTotal.Text = ShoppingCart.GetCart().GetTotal().ToString(".00");
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            Order order = new Order
+            {
+                UserName = settings.UserName,
+                OrderDate = DateTime.Now,
+                FirstName = txtFirstName.Text,
+                LastName = txtLastName.Text,
+                Address = txtAddress.Text,
+                City = txtCity.Text,
+                State = txtState.Text,
+                Country = txtCountry.Text,
+                Phone = txtPhone.Text,
+                Email = txtEmail.Text
+
+            };
+            ShoppingCart cart = ShoppingCart.GetCart();
+            int orderId = cart.CreateOrder(order);
+            MessageBox.Show($"Oderd id =  {orderId} is saved! ");
             this.Close();
         }
     }

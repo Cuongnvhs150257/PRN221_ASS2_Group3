@@ -37,6 +37,55 @@ namespace MusicStore
             var query = context.Albums.OrderBy(ab => ab.AlbumId);
             var paginatedList = await PaginatedList<Album>.CreateAsync(query, 1, 4);
             lvAlbums.ItemsSource = paginatedList;
+            cbGenre.SelectedIndex = 0;
+            bindGrid(1);
+        }
+
+        private void bindGrid(int pageIndex)
+        {
+            var albumIQ = context.Albums.Where(a => a.GenreId == (int) cbGenre.SelectedValue);
+            int i = 0;
+            foreach (var sp in listView.Children)
+            {
+                foreach(var obj in ((StackPanel)sp).Children)
+                {
+                    if (obj is Image)
+                    {
+                        ((Image)obj).Source = null;
+                    }
+                    if (obj is Label)
+                    {
+                        ((Label)obj).Content = "";
+                    }
+                    if (obj is Button)
+                    {
+                        ((Button)obj).Visibility = Visibility.Hidden;
+                    }
+                    
+                }
+                i++;
+                
+            }
+            i = 0;
+            /*
+            pages = PaginatedList<Album>.Create(albumIQ, pageIndex, 4);
+            foreach (var sp in listView.Children)
+            {
+                if(i < pages.Count)
+                {
+                    foreach(var obj in ((StackPanel)sp).Children)
+                    {
+                        if(obj is Image)
+                        {
+                            try
+                            {
+                                string path = pages[i].AlbumUrl.Re
+                            }
+                        }
+                    }
+                }
+            }
+            */
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
@@ -51,6 +100,8 @@ namespace MusicStore
 
         private void nextPage_Click(object sender, RoutedEventArgs e)
         {
+            bindGrid(1);
+            //cbGenre.ItemsSource = context.Genres.ToList().Select(genre => genre.Name).ToList();
 
         }
     }

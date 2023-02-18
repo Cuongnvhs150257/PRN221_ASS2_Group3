@@ -18,11 +18,11 @@
             <ListView.View>
                 <GridView>
                     
-                    <GridViewColumn Header="AlbumId" Width="100"/>
-                    <GridViewColumn Header="Tilte" Width="280"/>
-                    <GridViewColumn Header="Price" Width="100"/>
-                    <GridViewColumn Header="Count" Width="100"/>
-                    <GridViewColumn Header="Date Created" Width="170"/>
+                    <GridViewColumn Header="AlbumId" Width="100" DisplayMemberBinding="{Binding Path=AlbumId}" />
+                    <GridViewColumn Header="Tilte" Width="280" DisplayMemberBinding="{Binding Path=Album.Title}" />
+                    <GridViewColumn Header="Price" Width="100" DisplayMemberBinding="{Binding Path=Album.Price}" />
+                    <GridViewColumn Header="Count" Width="100" DisplayMemberBinding="{Binding Path=Count}" />
+                    <GridViewColumn Header="Date Created" Width="170" DisplayMemberBinding="{Binding Path=DateCreated}" />
                     <GridViewColumn Header="Remove From cart" Width="100">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
@@ -31,6 +31,7 @@
                        Margin="0"
                        VerticalAlignment="Center"
                                     Click="btnRemove_Click"
+                                    CommandParameter="{Binding}"
                                 />
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
