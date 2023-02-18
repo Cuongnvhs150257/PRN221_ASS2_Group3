@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
 
-    <Menu >
+    <Menu Loaded="Menu_Loaded" >
         <Menu.Background>
             <ImageBrush ImageSource="/backgorund2.png"/>
         </Menu.Background>
@@ -24,12 +24,22 @@
             </MenuItem.RenderTransform>
             
             <MenuItem Header="_Shopping" Click="ShoppingOnClick" Foreground="Red"/>
-            <MenuItem Header="_Album"  Click="AlbumOnClick" Foreground="Red"/>
+            <MenuItem Header="_Album"  Click="AlbumOnClick" Foreground="Red" IsEnabled="False" Name="album" IsEnabledChanged="album_IsEnabledChanged"/>
 
             <MenuItem Header="_Cart" Click="CartOnClick" Foreground="Red"/>
             <Separator />
             <MenuItem Header="_Login"  Click="LoginOnClick" />
         </MenuItem>
+        <Label x:Name="lblCheck" Content="Label" Height="39" Width="47" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-2.469"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
     </Menu>
 
 

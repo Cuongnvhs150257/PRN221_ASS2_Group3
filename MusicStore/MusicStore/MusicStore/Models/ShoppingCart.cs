@@ -11,6 +11,9 @@ namespace MusicStore.Models
     public partial class ShoppingCart
     {
         MusicStoreContext storeDB = new MusicStoreContext();
+
+        Settings Settings = new Settings();
+
         string ShoppingCartId { get; set; }
         //     public const string CartSessionKey = "CartId";
         public static ShoppingCart GetCart()
@@ -162,7 +165,7 @@ namespace MusicStore.Models
         
         public string GetCartId()
         {
-            /*
+            
             if (Settings.CartId == null)
             {
                 if (Settings.UserName != null)
@@ -174,11 +177,11 @@ namespace MusicStore.Models
                 }
             }
             return Settings.CartId;
-            */
+            
             return null;
         }
 
-        /*
+        
         // When a user has logged in, migrate their shopping cart to
         // be associated with their username
         public void MigrateCart()
@@ -191,6 +194,6 @@ namespace MusicStore.Models
             storeDB.SaveChanges();
             Settings.CartId = null;
         }
-        */
+        
     }
 }

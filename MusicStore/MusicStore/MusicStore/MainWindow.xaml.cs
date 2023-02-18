@@ -20,10 +20,31 @@ namespace MusicStore
     /// </summary>
     public partial class MainWindow : Window
     {
+        
+
+
         public MainWindow()
         {
+
             InitializeComponent();
+
         }
+        public MainWindow(Boolean checkAdmin)
+        {
+
+            InitializeComponent();
+            album.IsEnabled = checkAdmin;
+
+        }
+        private void album_IsEnabledChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            
+        }
+        private void Menu_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+        }
+    
 
      private void ShoppingOnClick(object sender, RoutedEventArgs e)
         {
@@ -44,7 +65,11 @@ namespace MusicStore
         private void LoginOnClick(object sender, RoutedEventArgs e)
         {
             LoginWindow login = new LoginWindow();
+            this.Close();
             login.ShowDialog();
+            
         }
+
+      
     }
 }

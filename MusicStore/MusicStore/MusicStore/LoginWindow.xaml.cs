@@ -19,7 +19,10 @@ namespace MusicStore
     /// Interaction logic for LoginWindow.xaml
     /// </summary>
     public partial class LoginWindow : Window
-    {
+    {   
+        Settings settings = new Settings();
+
+        Boolean checkAdmin;
         public LoginWindow()
         {
             InitializeComponent();
@@ -37,15 +40,26 @@ namespace MusicStore
             && u.Password == txtPass.Text).FirstOrDefault();
             if(user == null)
             {
-                MessageBox.Show("Tài khoản không tồn tại");
+                MessageBox.Show("This account doesn't exist");
 
+            }
+            else if(user.UserName == "admin")
+            {
+                MessageBox.Show("Admin Login Success");
+                checkAdmin = true;
+                MainWindow main = new MainWindow(checkAdmin);
+                main.ShowDialog();
+                this.Close();
             }
             else
             {
-
-                MessageBox.Show("Trường mặc cứt");
-
+                settings.UserName = user.UserName;
+                settings.Role = user.Role;
+                ShoppingCart cart = ShoppingCart.GetCart();
+                cart.MigrateCart();
+                MessageBox.Show("Login Success");
                 this.Close();
+                
             }
         }
     }

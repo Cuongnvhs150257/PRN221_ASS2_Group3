@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MusicStore.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,13 +20,16 @@ namespace MusicStore
     /// </summary>
     public partial class ShoppingWindow : Window
     {
+        MusicStoreContext context = new MusicStoreContext();
         public ShoppingWindow()
         {
             InitializeComponent();
+            cbGenre.ItemsSource = context.Genres.ToList().Select(genre => genre.Name).ToList();
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
+            cbGenre.ItemsSource = context.Genres.ToList().Select(genre => genre.Name).ToList();
 
         }
     }
