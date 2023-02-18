@@ -19,7 +19,8 @@ namespace MusicStore
     /// Interaction logic for LoginWindow.xaml
     /// </summary>
     public partial class LoginWindow : Window
-    {
+    {   
+        Boolean checkAdmin;
         public LoginWindow()
         {
             InitializeComponent();
@@ -40,11 +41,20 @@ namespace MusicStore
                 MessageBox.Show("Tài khoản không tồn tại");
 
             }
-            else
+            else if(user.UserName == "admin")
             {
-                MessageBox.Show("Trường mặc cứt");
-
+                MessageBox.Show("Admin Login Success");
+                checkAdmin = true;
+                MainWindow main = new MainWindow(checkAdmin);
+                main.ShowDialog();
                 this.Close();
+            }
+            else
+            {   
+
+                MessageBox.Show("Login Success");
+                this.Close();
+                
             }
         }
     }
