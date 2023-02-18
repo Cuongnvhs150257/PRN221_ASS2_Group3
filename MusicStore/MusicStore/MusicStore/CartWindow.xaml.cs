@@ -21,13 +21,19 @@ namespace MusicStore
     public partial class CartWindow : Window
     {
         MusicStoreContext context;
+
+        Settings settings = new Settings();
+
         public CartWindow()
         {
             InitializeComponent();
 
             context = new MusicStoreContext();
 
-            
+            ShoppingCart cart = ShoppingCart.GetCart();
+            lvCart.ItemsSource = cart.GetCartItems();
+            txtTotal.Text = cart.GetTotal().ToString(".00");
+            btnCheckout.IsEnabled = !string.IsNullOrEmpty(settings.UserName) && cart.GetTotal() > 0;
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -39,12 +45,16 @@ namespace MusicStore
         {
             CheckoutWindow checkoutWindow = new CheckoutWindow();
             checkoutWindow.ShowDialog();
+            this.Close();
         }
 
         private void btnRemove_Click(object sender, RoutedEventArgs e)
         {
             Button b = sender as Button;
             Cart c =  b.CommandParameter as Cart;
+            ShoppingCart cart = ShoppingCart.GetCart();
+            cart.RemoveFromCart(c.RecordId);
+            btnCheckout.IsEnabled = !string.IsNullOrEmpty(settings.UserName) && cart.GetTotal() > 0;
 
         }
     }
