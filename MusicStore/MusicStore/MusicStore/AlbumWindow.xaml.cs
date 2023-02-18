@@ -41,7 +41,7 @@ namespace MusicStore
             var album = lvAlbum.SelectedItem as Album;
             if (album != null)
             {
-                MessageBoxResult messageResult = System.Windows.MessageBox.Show("Are you sure?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
+                MessageBoxResult messageResult = System.Windows.MessageBox.Show("Do you want to delete?", "Delete Confirmation", System.Windows.MessageBoxButton.YesNo);
                 if (messageResult == MessageBoxResult.No)
                 {
                     return;
@@ -51,7 +51,7 @@ namespace MusicStore
                     context.Albums.Remove(album);
                     if (context.SaveChanges() > 0)
                     {
-                        MessageBox.Show($"{album.Title} Delete success");
+                        MessageBox.Show($"{album.Title} album is deleted!");
                         LoadAlbum();
                     }
                 }
@@ -89,7 +89,7 @@ namespace MusicStore
                 int count = context.SaveChanges();
                 if (count > 0)
                 {
-                    MessageBox.Show("Insert success");
+                    MessageBox.Show("A new album is added");
                     LoadAlbum();
                 }
                 else
@@ -120,7 +120,7 @@ namespace MusicStore
                     context.Albums.Update(album);
                     if (context.SaveChanges() > 0)
                     {
-                        MessageBox.Show($"{album.Title} Update success");
+                        MessageBox.Show($"{album.Title} album is updated");
                         LoadAlbum();
                     }
                 }
