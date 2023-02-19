@@ -8,10 +8,10 @@ namespace MusicStore
 {
     public partial class Settings
     {
-        public string UserName { get; set; }
+        public static string UserName { get; set; }
 
-        public int Role { get; set; } 
+        public static int Role { get; set; } 
 
-        public string CartId { get; set; } 
+        public static string CartId { get; set; } 
     }
 }
