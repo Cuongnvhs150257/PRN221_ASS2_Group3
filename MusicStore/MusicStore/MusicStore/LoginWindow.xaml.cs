@@ -20,7 +20,6 @@ namespace MusicStore
     /// </summary>
     public partial class LoginWindow : Window
     {   
-        Settings settings = new Settings();
 
         Boolean checkAdmin;
         public LoginWindow()
@@ -46,6 +45,10 @@ namespace MusicStore
             else if(user.UserName == "admin")
             {
                 MessageBox.Show("Admin Login Success");
+                Settings.UserName = user.UserName;
+                Settings.Role = user.Role;
+                ShoppingCart cart = ShoppingCart.GetCart();
+                cart.MigrateCart();
                 checkAdmin = true;
                 MainWindow main = new MainWindow(checkAdmin);
                 main.ShowDialog();
@@ -53,11 +56,13 @@ namespace MusicStore
             }
             else
             {
-                settings.UserName = user.UserName;
-                settings.Role = user.Role;
+                Settings.UserName = user.UserName;
+                Settings.Role = user.Role;
                 ShoppingCart cart = ShoppingCart.GetCart();
                 cart.MigrateCart();
                 MessageBox.Show("Login Success");
+                MainWindow main = new MainWindow();
+                main.ShowDialog();
                 this.Close();
                 
             }

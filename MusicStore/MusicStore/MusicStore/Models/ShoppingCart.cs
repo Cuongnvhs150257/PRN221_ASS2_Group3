@@ -12,7 +12,6 @@ namespace MusicStore.Models
     {
         MusicStoreContext storeDB = new MusicStoreContext();
 
-        Settings Settings = new Settings();
 
         string ShoppingCartId { get; set; }
         //     public const string CartSessionKey = "CartId";

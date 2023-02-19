@@ -75,7 +75,7 @@ namespace MusicStore
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
         {
-
+            bindGrid(1);
         }
 
         private void previousPage_Click(object sender, RoutedEventArgs e)
@@ -100,6 +100,7 @@ namespace MusicStore
             cartAlbums.AddToCart(album);
             CartWindow cart = new CartWindow(cartAlbums);
             cart.ShowDialog();
+            
         }
     }
 }

@@ -21,14 +21,13 @@ namespace MusicStore
     public partial class CheckoutWindow : Window
     {
         MusicStoreContext context;
-        Settings settings = new Settings();
 
         public CheckoutWindow()
         {
             InitializeComponent();
 
             context = new MusicStoreContext();
-            User user = context.Users.Where(u => u.UserName == settings.UserName).FirstOrDefault();
+            User user = context.Users.Where(u => u.UserName == Settings.UserName).FirstOrDefault();
             txtFirstName.Text = user.FirstName;
             txtLastName.Text = user.LastName;
             txtAddress.Text = user.Address;
@@ -49,7 +48,7 @@ namespace MusicStore
         {
             Order order = new Order
             {
-                UserName = settings.UserName,
+                UserName = Settings.UserName,
                 OrderDate = DateTime.Now,
                 FirstName = txtFirstName.Text,
                 LastName = txtLastName.Text,

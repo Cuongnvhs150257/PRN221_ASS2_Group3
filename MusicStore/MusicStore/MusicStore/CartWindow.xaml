@@ -11,7 +11,7 @@
             <ColumnDefinition Width="223*"/>
             <ColumnDefinition Width="685*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btnCheckout" Content="Check out" HorizontalAlignment="Left" Margin="72,53,0,0" VerticalAlignment="Top" Height="37" Width="121" FontSize="16" Click="btnCheckout_Click"/>
+        <Button x:Name="btnCheckout" Content="Check out" IsEnabled="False" HorizontalAlignment="Left" Margin="72,53,0,0" VerticalAlignment="Top" Height="37" Width="121" FontSize="16" Click="btnCheckout_Click"/>
         <Label x:Name="lblTotal" Content="Total:" HorizontalAlignment="Left" Margin="65,369,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Grid.Column="1"/>
         <TextBox x:Name="txtTotal" HorizontalAlignment="Left" Margin="142,374,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" FontSize="22" Grid.Column="1"/>
         <ListView Margin="42,113,27,70" Name="lvCart" Grid.ColumnSpan="2" >
