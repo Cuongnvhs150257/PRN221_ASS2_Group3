@@ -23,6 +23,7 @@ namespace MusicStore
         MusicStoreContext context;
 
         Settings settings = new Settings();
+        ShoppingCart cartAlbums = ShoppingCart.GetCart();
 
         public CartWindow()
         {
@@ -39,6 +40,7 @@ namespace MusicStore
         public CartWindow(ShoppingCart cart)
         {
             InitializeComponent();
+            cartAlbums = cart;
             lvCart.ItemsSource = cart.GetCartItems();
             txtTotal.Text = cart.GetTotal().ToString(".00");
             btnCheckout.IsEnabled = !string.IsNullOrEmpty(settings.UserName) && cart.GetTotal() > 0;
@@ -60,9 +62,9 @@ namespace MusicStore
         {
             Button b = sender as Button;
             Cart c =  b.CommandParameter as Cart;
-            ShoppingCart cart = ShoppingCart.GetCart();
-            cart.RemoveFromCart(c.RecordId);
-            btnCheckout.IsEnabled = !string.IsNullOrEmpty(settings.UserName) && cart.GetTotal() > 0;
+            cartAlbums.RemoveFromCart(c.RecordId);
+            lvCart.ItemsSource = cartAlbums.GetCartItems();
+            btnCheckout.IsEnabled = !string.IsNullOrEmpty(settings.UserName) && cartAlbums.GetTotal() > 0;
 
         }
     }
