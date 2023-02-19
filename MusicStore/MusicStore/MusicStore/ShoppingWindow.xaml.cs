@@ -19,9 +19,6 @@ namespace MusicStore
         MusicStoreContext context = new MusicStoreContext();
         int previous = 1;
         int next = 0;
-
-        //int previous = 1;
-        //int next = 0;
         ShoppingCart cartAlbums= ShoppingCart.GetCart();
         public ShoppingWindow()
         {
@@ -32,7 +29,7 @@ namespace MusicStore
             list.Insert(0, genre);
             cbGenre.ItemsSource = list;
             next = previous + 1;
-            bindGridFilter(1, 0);
+            //bindGridFilter(1, 0);
         }
 
         private async void bindGridFilter(int pageIndex, int genreId)
@@ -43,11 +40,12 @@ namespace MusicStore
             {
                 query = context.Albums.Where(album => album.Genre.GenreId == genreId).OrderBy(ab => ab.AlbumId);
             }
-            MessageBox.Show("All size of List Albums: "+query.ToList().Count.ToString());
+            //MessageBox.Show("All size of List Albums Filter: "+query.ToList().Count.ToString());
             
             //var query = context.Albums.Where(album=> album.Genre.GenreId==genreId).OrderBy(ab => ab.AlbumId);
             List<Album> list = await PaginatedList<Album>.CreateAsync(query, pageIndex, 4);
             PaginatedList<Album> pages = (PaginatedList<Album>)list;
+            //MessageBox.Show("All size of page List Albums: " + pages.Count);
             foreach (var sp in listView.Children)
             {
                 if (i < pages.Count)
