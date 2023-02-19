@@ -22,7 +22,6 @@ namespace MusicStore
     {
         MusicStoreContext context;
 
-        Settings settings = new Settings();
         ShoppingCart cartAlbums = ShoppingCart.GetCart();
 
         public CartWindow()
@@ -34,17 +33,19 @@ namespace MusicStore
             ShoppingCart cart = ShoppingCart.GetCart();
             lvCart.ItemsSource = cart.GetCartItems();
             txtTotal.Text = cart.GetTotal().ToString(".00");
-            btnCheckout.IsEnabled = !string.IsNullOrEmpty(settings.UserName) && cart.GetTotal() > 0;
+            btnCheckout.IsEnabled = !string.IsNullOrEmpty(Settings.UserName) && cart.GetTotal() > 0;
         }
 
+        
         public CartWindow(ShoppingCart cart)
         {
             InitializeComponent();
             cartAlbums = cart;
             lvCart.ItemsSource = cart.GetCartItems();
             txtTotal.Text = cart.GetTotal().ToString(".00");
-            btnCheckout.IsEnabled = !string.IsNullOrEmpty(settings.UserName) && cart.GetTotal() > 0;
+            btnCheckout.IsEnabled = !string.IsNullOrEmpty(Settings.UserName) && cart.GetTotal() > 0;
         }
+        
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -64,7 +65,8 @@ namespace MusicStore
             Cart c =  b.CommandParameter as Cart;
             cartAlbums.RemoveFromCart(c.RecordId);
             lvCart.ItemsSource = cartAlbums.GetCartItems();
-            btnCheckout.IsEnabled = !string.IsNullOrEmpty(settings.UserName) && cartAlbums.GetTotal() > 0;
+            btnCheckout.IsEnabled = !string.IsNullOrEmpty(Settings.UserName) && cartAlbums.GetTotal() > 0;
+            txtTotal.Text = cartAlbums.GetTotal().ToString(".00");
 
         }
     }

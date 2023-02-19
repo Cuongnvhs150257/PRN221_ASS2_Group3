@@ -160,6 +160,7 @@ namespace MusicStore
             cartAlbums.AddToCart(album);
             CartWindow cart = new CartWindow(cartAlbums);
             cart.ShowDialog();
+            
         }
     }
 }
