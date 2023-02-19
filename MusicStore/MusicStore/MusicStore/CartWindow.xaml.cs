@@ -36,6 +36,14 @@ namespace MusicStore
             btnCheckout.IsEnabled = !string.IsNullOrEmpty(settings.UserName) && cart.GetTotal() > 0;
         }
 
+        public CartWindow(ShoppingCart cart)
+        {
+            InitializeComponent();
+            lvCart.ItemsSource = cart.GetCartItems();
+            txtTotal.Text = cart.GetTotal().ToString(".00");
+            btnCheckout.IsEnabled = !string.IsNullOrEmpty(settings.UserName) && cart.GetTotal() > 0;
+        }
+
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 

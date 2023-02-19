@@ -1,18 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
-using MusicStore.Models;
+﻿using MusicStore.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace MusicStore
 {
@@ -22,70 +16,61 @@ namespace MusicStore
     public partial class ShoppingWindow : Window
     {
         MusicStoreContext context = new MusicStoreContext();
-        int previous = 0;
+        int previous = 1;
         int next = 0;
+        ShoppingCart cartAlbums= ShoppingCart.GetCart();
         public ShoppingWindow()
         {
             InitializeComponent();
             cbGenre.ItemsSource = context.Genres.ToList().Select(genre => genre.Name).ToList();
             next = previous + 1;
-            LoadData();
+            bindGrid(previous);
         }
 
-        private async void LoadData()
-        {
-            var query = context.Albums.OrderBy(ab => ab.AlbumId);
-            var paginatedList = await PaginatedList<Album>.CreateAsync(query, 1, 4);
-            lvAlbums.ItemsSource = paginatedList;
-            cbGenre.SelectedIndex = 0;
-            bindGrid(1);
-        }
 
-        private void bindGrid(int pageIndex)
+        private async void bindGrid(int pageIndex)
         {
-            var albumIQ = context.Albums.Where(a => a.GenreId == (int) cbGenre.SelectedValue);
             int i = 0;
+            var query = context.Albums.OrderBy(ab => ab.AlbumId);
+            List<Album> list = await PaginatedList<Album>.CreateAsync(query, pageIndex, 4);
+            PaginatedList<Album> pages = (PaginatedList<Album>)list;
             foreach (var sp in listView.Children)
             {
-                foreach(var obj in ((StackPanel)sp).Children)
+                if (i < pages.Count)
                 {
-                    if (obj is Image)
+                    foreach (var obj in ((StackPanel)sp).Children)
                     {
-                        ((Image)obj).Source = null;
-                    }
-                    if (obj is Label)
-                    {
-                        ((Label)obj).Content = "";
-                    }
-                    if (obj is Button)
-                    {
-                        ((Button)obj).Visibility = Visibility.Hidden;
-                    }
-                    
-                }
-                i++;
-                
-            }
-            i = 0;
-            /*
-            pages = PaginatedList<Album>.Create(albumIQ, pageIndex, 4);
-            foreach (var sp in listView.Children)
-            {
-                if(i < pages.Count)
-                {
-                    foreach(var obj in ((StackPanel)sp).Children)
-                    {
-                        if(obj is Image)
+                        if (obj is Label)
+                        {
+                            ((Label)obj).Content = list[i].Title.ToString() + ": " + pages[i].Price.ToString() + " USD";
+                        }
+                        if (obj is Image)
                         {
                             try
                             {
-                                string path = pages[i].AlbumUrl.Re
+                                String path = pages[i].AlbumUrl.Replace('/', '\\');
+
+                                ((Image)obj).Source = new BitmapImage(new Uri($"file://{Directory.GetCurrentDirectory()}{path}"));
+
                             }
+                            catch
+                            {
+                            }
+                        }
+                        if (obj is Button)
+                        {
+                            Button btnAdd = (Button)obj;
+                            btnAdd.Visibility = Visibility.Visible;
+                            btnAdd.CommandParameter = pages[i].AlbumId;
+                           
+                            btnAdd.Click += CartOnClick;
                         }
                     }
                 }
+                i++;
             }
-            */
+            btnPrevious.IsEnabled = pages.HasPreviousPage;
+            btnNext.IsEnabled = pages.HasNextPage;
         }
 
         private void btnSearch_Click(object sender, RoutedEventArgs e)
@@ -95,14 +80,26 @@ namespace MusicStore
 
         private void previousPage_Click(object sender, RoutedEventArgs e)
         {
-
+            next = previous;
+            previous -= 1;
+            bindGrid(previous);
         }
 
         private void nextPage_Click(object sender, RoutedEventArgs e)
         {
-            bindGrid(1);
-            //cbGenre.ItemsSource = context.Genres.ToList().Select(genre => genre.Name).ToList();
+            previous = next;
+            next += 1;
+            bindGrid(next);
+        }
 
+        private void CartOnClick(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            int value = (int)button.CommandParameter;
+            Album album = context.Albums.SingleOrDefault(al => al.AlbumId == value);
+            cartAlbums.AddToCart(album);
+            CartWindow cart = new CartWindow(cartAlbums);
+            cart.ShowDialog();
         }
     }
 }
